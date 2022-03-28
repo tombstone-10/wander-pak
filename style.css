@@ -673,7 +673,7 @@ img {
   }
 
   .menu-btn{
-    background: url(img/bars-solid.svg)no-repeat;
+    background: url(bars-solid.svg)no-repeat;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10%;
     background-size: 20px;
@@ -686,7 +686,7 @@ img {
 
   .menu-btn.active{
     z-index: 999;
-    background: url(img/xmark-solid.svg)no-repeat;
+    background: url(xmark-solid.svg)no-repeat;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 20%;
     background-size: 20px;
