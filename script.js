@@ -2,10 +2,10 @@
  const menuBtn = document.querySelector(".menu-btn");
  const navigation = document.querySelector(".navigation");
 
- menuBtn.addEventListener("click", () => {
+ function ham() {
    menuBtn.classList.toggle("active");
    navigation.classList.toggle("active");
- });
+ };
 
  //Javacript for video slider navigation
  const btns = document.querySelectorAll(".nav-btn");
@@ -36,17 +36,20 @@
    });
  });
 
-
  const userSign = document.getElementById('userSign');
  const home = document.getElementById('home');
- const main = document.querySelector('.container')
- 
-userSign.addEventListener('click', function(e){
+ const main = document.querySelector('.container');
+
+function show(e){
+
   container.classList.toggle('hide');
   home.classList.toggle('blureffect');
   main.classList.toggle('blureffect');
 
-})
+  ham();
+  
+}
+
 
 
 const signUpButton = document.getElementById('signUp');
@@ -63,6 +66,10 @@ container.classList.remove('right-panel-active')}
 
 function closeMe(){
   container.classList.add('hide');
+  home.classList.remove('blureffect');
+  main.classList.remove('blureffect');
+
+
 }
 
  AOS.init({
