@@ -309,7 +309,6 @@ section{
   flex-direction: column;
   background:var(--primary)	;
   transition: all 1.5s;
-  overflow-x: scroll;
 }
 
 .home:before{
