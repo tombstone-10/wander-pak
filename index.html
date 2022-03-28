@@ -12,11 +12,12 @@
     <link rel = "icon" href ="logo.png" type = "image/x-icon">
     <script src="https://kit.fontawesome.com/6e9ad2606d.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+
+  <body id="body">
 
     <header>
       <a href="#" class="brand"><span style="color: white;">Wan</span><span style="color: rgb(122, 196, 11);">der Pakistan</span></a>
-      <div class="menu-btn"></div>
+      <div onclick="ham()" class="menu-btn"></div>
       <div class="navigation">
         <div class="navigation-items">
           <a href="#home">Home</a>
@@ -24,7 +25,7 @@
           <a href="#sec2">Hotels & Restaurants</a>
           <a href="#sec3">Store</a>
           <a href="#sec4">Blog</a>
-          <a><i id="userSign" class="fa-regular fa-user fa-1.5x"></i></a>
+          <a><i id="userSign" onclick="show()" class="fa-regular fa-user fa-1.5x"></i></a>
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           <div class="togglesearch">
             <input type="text" placeholder="Search..."/>
@@ -53,7 +54,7 @@
       </div>
       <div class="content">
         <h1>The Mughal Heritage<br><span>Lahore Lahore Ayy</span></h1>
-        <p>Once known as city of gardens during Mughal Era is rich in cultural, modern and religious tourism. A perfect mix of tradition and modernity is waiting for you...<br> So what are you waiting for?</p>
+        <p>Once known as city of gardens during Mughal Era is rich in cultural, modern and religious tourism. A perfect mix of tradition and modernity is waiting for you! So what are you waiting for?</p>
         <a href="#">See Locations</a>
       </div>
       <div class="content">
@@ -85,6 +86,7 @@
 
     <section class="signpop hide" id="signpop">
       <i onclick="closeMe()" id="closeSign" class="fa-solid fa-xmark"></i>
+      
       <div class="form-container sign-up-container">
         
         <form action="#">
